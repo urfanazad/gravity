@@ -1,0 +1,55 @@
+------------------------------------------------------------
+/usr/bin/pip3 run on Sat Nov 30 17:36:29 2019
+Downloading/unpacking ansible-container[docker,k8s]
+  Getting page https://pypi.python.org/simple/ansible-container/
+  URLs to search for versions for ansible-container[docker,k8s]:
+  * https://pypi.python.org/simple/ansible-container/
+  Analyzing links from page https://pypi.org/simple/ansible-container/
+    Found link https://files.pythonhosted.org/packages/7b/69/3b1c557e9928fd9f14a0a6c77618f87668457ccd5ddf4834bd41e68eee43/ansible-container-0.1.0.tar.gz#sha256=cc9b3acfc9134b5e1eb38e049370fd9a5bf35a65f5f0bcc967d1eeb36c1e83bf (from https://pypi.org/simple/ansible-container/), version: 0.1.0
+    Found link https://files.pythonhosted.org/packages/72/1f/66e39c85f2cc5249ee89b073bc8bd0b4788fe1a2edbd9e963d59e3228c9d/ansible-container-0.2.0.tar.gz#sha256=4a29ee9bfe2ec5af6e06a0f6e4df16d78294d58e6a84ddb47998a145c2be0aaf (from https://pypi.org/simple/ansible-container/), version: 0.2.0
+    Found link https://files.pythonhosted.org/packages/c7/28/ecc408dbbc80290bffdb2618697996720cdb5d29e70a569266eb4815909c/ansible-container-0.3.0.tar.gz#sha256=5e37a53b992fc6c069bb34d1595a3f7b3e24bb1346b4c98218808993568d9a85 (from https://pypi.org/simple/ansible-container/), version: 0.3.0
+    Found link https://files.pythonhosted.org/packages/df/aa/2e705dcc294089337356b30c578782a577d0c879314cf4afb281f81f002f/ansible-container-0.9.0.0.tar.gz#sha256=365f1ee2128746628c5cd0d8e4995d133ba4b5ee67b10f5074871b071dcf6bf3 (from https://pypi.org/simple/ansible-container/), version: 0.9.0.0
+    Found link https://files.pythonhosted.org/packages/ad/80/7f02effabb847de63ab0b1466117ff0d5aa187b1fadd380f08362b836655/ansible-container-0.9.1.tar.gz#sha256=054605212906bcbe8b04bbe3cd5aa7137d3a9ae5c5b9007c88f6a5ba3f5221bc (from https://pypi.org/simple/ansible-container/), version: 0.9.1
+    Found link https://files.pythonhosted.org/packages/bc/2a/b1252de3931173d26a30fc965be33c9cc0044cf7b23ce4c707f55d86830c/ansible-container-0.9.2.tar.gz#sha256=3cae38bc06ea40a7c908128f77837053b29ac0c4460b9de3d919d46f4e299e64 (from https://pypi.org/simple/ansible-container/), version: 0.9.2
+  Using version 0.9.2 (newest of versions: 0.9.2, 0.9.1, 0.9.0.0, 0.3.0, 0.2.0, 0.1.0)
+  Downloading from URL https://files.pythonhosted.org/packages/bc/2a/b1252de3931173d26a30fc965be33c9cc0044cf7b23ce4c707f55d86830c/ansible-container-0.9.2.tar.gz#sha256=3cae38bc06ea40a7c908128f77837053b29ac0c4460b9de3d919d46f4e299e64 (from https://pypi.org/simple/ansible-container/)
+  Running setup.py (path:/tmp/pip_build_root/ansible-container/setup.py) egg_info for package ansible-container
+    Traceback (most recent call last):
+      File "<string>", line 17, in <module>
+      File "/tmp/pip_build_root/ansible-container/setup.py", line 83, in <module>
+        install_requires=[str(ir.req) for ir in install_reqs if ir.match_markers()],
+      File "/tmp/pip_build_root/ansible-container/setup.py", line 83, in <listcomp>
+        install_requires=[str(ir.req) for ir in install_reqs if ir.match_markers()],
+    AttributeError: 'InstallRequirement' object has no attribute 'match_markers'
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+
+  File "/tmp/pip_build_root/ansible-container/setup.py", line 83, in <module>
+
+    install_requires=[str(ir.req) for ir in install_reqs if ir.match_markers()],
+
+  File "/tmp/pip_build_root/ansible-container/setup.py", line 83, in <listcomp>
+
+    install_requires=[str(ir.req) for ir in install_reqs if ir.match_markers()],
+
+AttributeError: 'InstallRequirement' object has no attribute 'match_markers'
+
+----------------------------------------
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_root...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/ansible-container
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python3/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python3/dist-packages/pip/req.py", line 1230, in prepare_files
+    req_to_install.run_egg_info()
+  File "/usr/lib/python3/dist-packages/pip/req.py", line 326, in run_egg_info
+    command_desc='python setup.py egg_info')
+  File "/usr/lib/python3/dist-packages/pip/util.py", line 715, in call_subprocess
+    % (command_desc, proc.returncode, cwd))
+pip.exceptions.InstallationError: Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/ansible-container
